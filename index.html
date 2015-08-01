@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="appTest">
-  <style>
-    <div class="ng-hide">{ display: none!important; }</div>
-  </style>
-  <title ng-bind="title"></title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <base href="./">
-  <link rel="stylesheet" href="static/styles/lib-e07f6d57.css">
-  <link rel="stylesheet" href="static/styles/app-4695e440.css">
-</html>
-<body ng-class="_class + '-page'">
-  <div class="wrapper">
-    <header ui-view="header" class="header-view"></header>
-    <div class="content">
-      <div ui-view="sidebar" ng-class="{'show': showSidebar}" class="sidebar-view"></div>
-      <div class="main-content">
-        <div ui-view="breadcrumb" class="breadcrumb-view"></div>
-        <div ui-view="main" class="main-view"></div>
+<html lang="en" ng-app="appTest" ng-strict-di>
+  <head>
+    <style>
+      <div class="ng-hide">{ display: none!important; }</div>
+    </style>
+    <title ng-bind="title"></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <base href="./">
+    <link rel="stylesheet" href="static/styles/lib-e07f6d57.css">
+    <link rel="stylesheet" href="static/styles/app-4695e440.css">
+  </head>
+  <body ng-class="_class + '-page'">
+    <div class="wrapper">
+      <header ui-view="header" class="header-view"></header>
+      <div class="content">
+        <div ui-view="sidebar" ng-class="{'show': showSidebar}" class="sidebar-view"></div>
+        <div class="main-content">
+          <div ui-view="breadcrumb" class="breadcrumb-view"></div>
+          <div ui-view="main" class="main-view"></div>
+        </div>
       </div>
+      <footer ui-view="footer" class="footer-view"></footer>
     </div>
-    <footer ui-view="footer" class="footer-view"></footer>
-  </div>
-  <script src="static/js/lib-7d376f78.js"></script>
-  <script src="static/js/app-0bc6c6dd.js"></script>
-</body>
+    <script src="static/js/lib-7d376f78.js"></script>
+    <script src="static/js/app-a2c5ffa4.js"></script>
+  </body>
+</html>
