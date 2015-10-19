@@ -5,9 +5,9 @@
         .module('app.core')
         .directive('aioFocusMe', FocusMe);
 
-    FocusMe.$inject = ['$timeout'];
+    FocusMe.$inject = [];
     /* @ngInject */
-    function FocusMe ($timeout) {
+    function FocusMe () {
         var directive = {
             restrict: 'A',
             link: link
@@ -19,7 +19,7 @@
         function link (scope, element, attrs) {
             scope.$watch(attrs.aioFocusMe, function (val) {
                 if (val) {
-                    $timeout(function () {
+                    scope.$evalAsync(function () {
                         element[0].focus();
                     });
                 }

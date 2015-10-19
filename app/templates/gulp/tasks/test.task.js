@@ -34,23 +34,20 @@ module.exports = function (gulp, config, $, args) {
 
     function startUnitTests (singleRun, done) {
         var child;
-        var excludeFiles = [];
         var fork = require('child_process').fork;
         var karma = require('karma').server;
 
         if (singleRun) {
             karma.start({
-                configFile: __dirname + '../karma.conf.js',
-                exclude: excludeFiles,
+                configFile: __dirname + '/../karma.conf.js',
                 singleRun: !!singleRun
             }, karmaCompleted);
         } else {
             // use phantomjs when auto-run tests
             karma.start({
-                configFile: __dirname + '../karma.conf.js',
-                exclude: excludeFiles,
+                configFile: __dirname + '/../karma.conf.js',
                 singleRun: !!singleRun,
-                browser: ['phantomjs']
+                browsers: ['PhantomJS']
             }, karmaCompleted);
         }
 

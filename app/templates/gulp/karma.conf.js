@@ -3,15 +3,15 @@ module.exports = function (config) {
     var gulpConfig = require('./gulp.config')();
 
     config.set({
-        basePath: gulpConfig.root,
+        basePath: '../',
         frameworks: ['jasmine'],
-        exclude: gulpConfig.karma.exclude,
-        files: gulpConfig.karma.files,
-        preprocessors: gulpConfig.karma.preprocessors,
-        reporters: ['progress', 'coverage', 'junit', 'mocha'],
-        coverageReporter: gulpConfig.karma.coverage,
-        junitReporter: gulpConfig.karma.junit,
+        exclude: gulpConfig.karmaOption.exclude,
+        files: gulpConfig.karmaOption.files,
+        preprocessors: gulpConfig.karmaOption.preprocessors,
+        reporters: ['mocha', 'coverage', 'junit'],
+        coverageReporter: gulpConfig.karmaOption.coverage,
+        junitReporter: gulpConfig.karmaOption.junit,
         reportSlowerThan: 500,
-        browsers: ['chrome']
+        browsers: ['Chrome']
     });
 };

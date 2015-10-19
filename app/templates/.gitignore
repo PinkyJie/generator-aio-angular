@@ -12,3 +12,5 @@ client/build
 # test folder
 client/source/test/e2e/screenshots/*
 !client/source/test/e2e/screenshots/.gitkeep
+client/source/test/unit/results
+test-results.xml

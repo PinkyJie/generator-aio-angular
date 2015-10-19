@@ -161,7 +161,8 @@ module.exports = function () {
             files: [].concat(
                 bowerFiles,
                 client.app + '**/*.module.js',
-                client.app + '**/*.js'
+                client.app + '**/*.js',
+                config.js.test.unit.specs
             ),
             exclude: [],
             coverage: {
