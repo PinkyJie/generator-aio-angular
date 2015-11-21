@@ -15,7 +15,7 @@ npm install -g bower gulp
 ```bash
 npm install
 ```
-    
+
 > it will run `bower install` automatically
 
 ## Launch Mock Server
@@ -31,7 +31,7 @@ You can also launch the server with `gulp`:
 * for development: `gulp serve:dev --mock`
 * for production: `gulp serve:prod --mock`
 
-> `--mock` will also include the API mock files 
+> `--mock` will also include the API mock files
 
 ## Linting
 
@@ -45,7 +45,7 @@ gulp lint
 
 * Unit Test: `gulp test:unit`
 * Unit Test with auto watch: `gulp test:tdd`
-* E2E Test: `gulp test:e2e`
+* E2E Test: `gulp test:e2e`(you need to run `./node_modules/protractor/bin/webdriver-manager update` first)
 
 ## Building
 
@@ -53,10 +53,10 @@ gulp lint
 * for production: `gulp build:prod --mock`
 
 All the build files will in the sub folder of `client/build/`, development environment will use the original source files, production environment has some optimizations:
-    
+
 * All the Javascript/CSS files are minified and concated.
 * All the template files used in Angular are processed by `$templateCache`.
 * All the images used are optimized to smaller size.
 * The compressed files will be suffixed by random hash.
 
- 
+

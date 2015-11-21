@@ -37,9 +37,13 @@ module.exports = function () {
                     var browserName = capabilities.caps_.browserName;
                     var filename = browserName + '-' +
                         currentSpec.description.replace(/[ :]/g, '-') + '.png';
+                        try {
+                            fs.mkdirSync(browser.params.screenshotDir);
+                        } catch (e) {}
                     var stream = fs.createWriteStream(browser.params.screenshotDir + filename);
-                    stream.write(new Buffer(png, 'base64'));
-                    stream.end();
+                    stream.on('open', function () {
+                        stream.write(new Buffer(png, 'base64'));
+                    });
                 });
             });
         }
