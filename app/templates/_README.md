@@ -45,7 +45,9 @@ gulp lint
 
 * Unit Test: `gulp test:unit`
 * Unit Test with auto watch: `gulp test:tdd`
-* E2E Test: `gulp test:e2e`(you need to run `./node_modules/protractor/bin/webdriver-manager update` first)
+* E2E Test: `gulp test:e2e`
+    * run `./node_modules/protractor/bin/webdriver-manager update` first
+    * make sure a local mock server is running
 
 ## Building
 

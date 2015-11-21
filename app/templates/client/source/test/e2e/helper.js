@@ -37,9 +37,11 @@ module.exports = function () {
                     var browserName = capabilities.caps_.browserName;
                     var filename = browserName + '-' +
                         currentSpec.description.replace(/[ :]/g, '-') + '.png';
-                        try {
-                            fs.mkdirSync(browser.params.screenshotDir);
-                        } catch (e) {}
+                    try {
+                        fs.mkdirSync(browser.params.screenshotDir);
+                    } catch (e) {
+                        console.log(e);
+                    }
                     var stream = fs.createWriteStream(browser.params.screenshotDir + filename);
                     stream.on('open', function () {
                         stream.write(new Buffer(png, 'base64'));
