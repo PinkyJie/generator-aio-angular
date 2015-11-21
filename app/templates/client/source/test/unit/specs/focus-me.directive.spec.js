@@ -1,9 +1,10 @@
+/* globals inject */
 describe('FocusMe Directive', function () {
     var scope;
     var element;
 
     beforeEach(function () {
-        module('app.core')
+        module('app.core');
     });
 
     beforeEach(inject(function ($rootScope, $compile) {

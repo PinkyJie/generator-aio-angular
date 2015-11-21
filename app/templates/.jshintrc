@@ -43,19 +43,14 @@
 
     "browser": true,
     "node": true,
+    "jasmine": true,
 
     "globals": {
         "angular": false,
         "browser": false,
         "module": false,
-        "jasmine": false,
-        "expect": false,
-        "describe": false,
-        "it": false,
         "element": false,
         "by": false,
-        "beforeEach": false,
-        "afterEach": false,
         "$$": false
     }
 }
