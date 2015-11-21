@@ -2,6 +2,8 @@
 
 All In One [Yeoman](http://yeoman.io) generator for AngularJS 1.3, using `gulp` and `ui-router` with `material design`, based on John Papa's [generator-hottowel](https://github.com/johnpapa/generator-hottowel) and [angular-styleguide](https://github.com/johnpapa/angular-styleguide).
 
+Wanna use **Webpack + ES6**? Check the [angular1-webpack-starter](https://github.com/PinkyJie/angular1-webpack-starter) project.
+
 > Pure front-end implementation, all API interaction are mocked using [angular-mocks](https://docs.angularjs.org/api/ngMock). The [server folder](app/templates/server) is just a placeholder here, you can use any back-end technique. 
 
 ## Preview
