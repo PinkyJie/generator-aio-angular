@@ -2,22 +2,6 @@
 (function () {
     'use strict';
 
-    angular
-        .module('appTest')
-        .factory('mockData', mockData);
-
-    function mockData () {
-        var _loginStatus = false;
-        var service = {
-            loginStatus: _loginStatus,
-            userInfo: _userInfo,
-            userProducts: _userProducts,
-            phones: _phones
-        };
-
-        return service;
-    }
-
     var _userInfo = {
         'name': 'PinkyJie'
     };
@@ -76,6 +60,22 @@
             'releaseDate': _getTimestamp(2015, 1, 18)
         }
     ];
+
+    angular
+        .module('appTest')
+        .factory('mockData', mockData);
+
+    function mockData () {
+        var _loginStatus = false;
+        var service = {
+            loginStatus: _loginStatus,
+            userInfo: _userInfo,
+            userProducts: _userProducts,
+            phones: _phones
+        };
+
+        return service;
+    }
 
     ///////////////
 
