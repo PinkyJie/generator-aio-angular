@@ -25,7 +25,7 @@ Check out a [demo site](http://pinkyjie.com/generator-aio-angular/#/) generated 
    * Easy responsive implementation, very convenient to support small screen devices. (see [responsive.styl](app/templates/client/source/styles/responsive.styl))
 * Animation
    * Using [animate.css](https://daneden.github.io/animate.css/).
-   * All the animation defined by `animate.css` can be used directly as keyfrmae animation. (see [content.styl](app/templates/client/source/styles/layout/content.styl#L28))
+   * All the animation defined by `animate.css` can be used directly as keyframe animation. (see [content.styl](app/templates/client/source/styles/layout/content.styl#L28))
 * Splited Gulp Tasks
    * Gulp tasks are splited in different files by category. (see [gulp folder](app/templates/gulp))
 * More understandable router design
