@@ -17,7 +17,7 @@ Check out a [demo site](http://pinkyjie.com/generator-aio-angular/#/) generated 
 * Material Design
    * Using [LumX](http://ui.lumapps.com/).
    * Why not [Angular Material](https://material.angularjs.org)? Many common used components are missing, for exmaple, dropdown menu.
-   * Why not [Bootstrap Material](http://fezvrasta.github.io/bootstrap-material-design/)? Many components are not implemented, not pure material design.
+   * Why not [Bootstrap Material](https://mdbootstrap.com/)? Many components are not implemented, not pure material design.
 * Flex Layout
    * Using flex layout for main layout and many other places.
 * Responsive
